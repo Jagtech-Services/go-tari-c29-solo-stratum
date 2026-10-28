@@ -3,7 +3,7 @@ package security
 import (
 	"errors"
 	"fmt"
-	"github.com/snipa22/go-tari-c29-solo-stratum/subsystems/config"
+	"github.com/Jagtech-Services/go-tari-c29-solo-stratum/subsystems/config"
 	"strings"
 )
 
