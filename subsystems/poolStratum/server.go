@@ -3,9 +3,9 @@ package poolStratum
 import (
 	"encoding/json"
 	"fmt"
-	core "github.com/Snipa22/core-go-lib/milieu"
-	"github.com/snipa22/go-tari-c29-solo-stratum/subsystems/config"
-	"github.com/snipa22/go-tari-c29-solo-stratum/subsystems/messages"
+	core "github.com/Jagtech-Services/core-go-lib/milieu"
+	"github.com/Jagtech-Services/go-tari-c29-solo-stratum/subsystems/config"
+	"github.com/Jagtech-Services/go-tari-c29-solo-stratum/subsystems/messages"
 	"io"
 	"net"
 	"strings"

@@ -14,19 +14,19 @@ import (
 	"sync"
 	"time"
 
-	core "github.com/Snipa22/core-go-lib/milieu"
-	"github.com/Snipa22/go-tari-grpc-lib/v3/nodeGRPC"
+	core "github.com/Jagtech-Services/core-go-lib/milieu"
+	"github.com/Jagtech-Services/go-tari-c29-solo-stratum/subsystems/blockTemplateCache"
+	"github.com/Jagtech-Services/go-tari-c29-solo-stratum/subsystems/config"
+	"github.com/Jagtech-Services/go-tari-c29-solo-stratum/subsystems/messages"
+	"github.com/Jagtech-Services/go-tari-c29-solo-stratum/subsystems/minerTracking"
+	"github.com/Jagtech-Services/go-tari-c29-solo-stratum/subsystems/security"
+	"github.com/Jagtech-Services/go-tari-c29-solo-stratum/subsystems/tipDataCache"
+	"github.com/Jagtech-Services/go-tari-lib/v3/nodeGRPC"
+	"github.com/Jagtech-Services/powkit/cuckoo"
 	"github.com/dchest/blake2b"
 	"github.com/google/uuid"
 	"github.com/holiman/uint256"
 	"github.com/robfig/cron/v3"
-	"github.com/snipa22/go-tari-c29-solo-stratum/subsystems/blockTemplateCache"
-	"github.com/snipa22/go-tari-c29-solo-stratum/subsystems/config"
-	"github.com/snipa22/go-tari-c29-solo-stratum/subsystems/messages"
-	"github.com/snipa22/go-tari-c29-solo-stratum/subsystems/minerTracking"
-	"github.com/snipa22/go-tari-c29-solo-stratum/subsystems/security"
-	"github.com/snipa22/go-tari-c29-solo-stratum/subsystems/tipDataCache"
-	"github.com/snipa22/powkit/cuckoo"
 )
 
 var badXmrig, _ = regexp.Compile(`XMRig/2.([0-9]|10|11|12|13|14|15|16).*`)
